@@ -13,9 +13,6 @@ dist
 dist-ssr
 *.local
 
-# Temporarily exclude image files due to Git issues
-*.jpg
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
