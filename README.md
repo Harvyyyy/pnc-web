@@ -1,8 +1,17 @@
-# React + Vite
+# PNC Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository for the PNC Website project built with React and Vite.
 
-Currently, two official plugins are available:
+## Image Files
+
+The repository includes most of the image files needed for the website. However, there are some JPG files in the `src/assets/` directory that may not be properly included in the repository due to file access issues:
+
+- All `pnc*.jpg` files have been successfully added to the repository and will be available when cloned.
+- The `com*.jpg` files are showing unusual behavior - they appear in directory listings but cannot be accessed or added to Git. This may be due to the future dates on these files (2025).
+
+## Development Setup
+
+This project uses Vite with React. Two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
