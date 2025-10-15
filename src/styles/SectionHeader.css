@@ -1,0 +1,41 @@
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
+}
+
+/* The decorative underline */
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--pnc-secondary-color);
+  border-radius: 2px;
+}
+
+.section-header.text-center h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-header.text-start h2::after {
+  left: 0;
+  transform: translateX(0);
+}
+
+@media (max-width: 991px) {
+  .section-header {
+    text-align: center !important;
+  }
+  .section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

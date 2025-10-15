@@ -1,0 +1,86 @@
+/* --- About Page Hero --- */
+.about-hero-section {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 25, 51, 0.7);
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- History Section --- */
+.history-image {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+/* --- Officer Card --- */
+.officer-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.officer-card .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.officer-card:hover .card-img-top {
+  filter: grayscale(0%);
+}
+
+.officer-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.officer-card .card-title {
+  color: var(--pnc-primary-color);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.officer-card .card-text {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .officer-card {
+    height: 350px; 
+  }
+  .officer-card .card-img-top {
+    height: 200px;
+  }
+}

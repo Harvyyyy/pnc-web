@@ -1,0 +1,168 @@
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 25, 51, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+
+/* --- Scroll Down Indicator --- */
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+
+/* --- Hero Button Styling --- */
+.hero-button-primary {
+  background-color: var(--pnc-secondary-color);
+  border-color: var(--pnc-secondary-color);
+  color: var(--pnc-primary-color);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button-primary:hover {
+  background-color: #ffca2c;
+  border-color: #ffca2c;
+  color: var(--pnc-primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 7px 25px rgba(255, 193, 7, 0.4);
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hero-button-secondary:hover {
+  background-color: white;
+  color: var(--pnc-primary-color);
+  transform: translateY(-3px);
+}
+
+
+/* --- Features Section --- */
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--pnc-secondary-color); 
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover .feature-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+
+/* --- Carousel --- */
+.carousel-image {
+  height: 550px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+.carousel-caption {
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+  }
+}
+
+
+/* --- Core Values --- */
+.core-value-initial {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--pnc-primary-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-hover:hover .core-value-initial {
+  background-color: var(--pnc-secondary-color);
+  color: var(--pnc-primary-color);
+  transform: scale(1.1);
+}
+
+
+/* --- Call to Action Section --- */
+.cta-section {
+  background: linear-gradient(45deg, #002349, #003366);
+  color: white;
+}

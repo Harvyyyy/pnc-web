@@ -1,0 +1,81 @@
+/* --- Contact Page Hero --- */
+.contact-hero-section {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 25, 51, 0.7);
+}
+
+.contact-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Contact Info Cards --- */
+.contact-info-card {
+  background-color: var(--pnc-primary-color);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 51, 102, 0.3);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: var(--pnc-secondary-color);
+  margin-right: 1.5rem;
+}
+
+.contact-info-card h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.contact-info-card p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Contact Form Styling --- */
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--pnc-primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 51, 102, 0.25);
+}
+
+/* --- Form Success Message --- */
+.form-success-message {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border-left: 5px solid #0f5132;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}

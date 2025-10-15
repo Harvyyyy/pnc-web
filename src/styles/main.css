@@ -1,0 +1,18 @@
+body {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+:root {
+  --pnc-primary-color: #003366; 
+  --pnc-secondary-color: #FFC107; 
+}

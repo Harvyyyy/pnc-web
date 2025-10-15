@@ -1,0 +1,131 @@
+/* --- Admission Page Hero --- */
+.admission-hero-section {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.admission-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 25, 51, 0.7);
+}
+
+.admission-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* --- Main Content Container --- */
+.admission-content-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-top: -80px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+/* --- Tab Styling --- */
+.admission-tabs .nav-link {
+  font-weight: 600;
+  color: var(--pnc-primary-color);
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.admission-tabs .nav-link.active {
+  color: var(--pnc-primary-color);
+  background-color: #f8f9fa;
+  border-bottom: 3px solid var(--pnc-secondary-color);
+}
+
+.admission-tabs .nav-link:hover {
+  background-color: #f1f3f5;
+}
+
+
+/* --- Wrapper for Manual Application Content --- */
+.manual-application-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+/* --- Step-by-Step Process Cards --- */
+.step-card {
+  border: none;
+  position: relative;
+  padding-left: 3.5rem;
+  height: 100%;
+}
+
+.step-number {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--pnc-primary-color);
+  color: var(--pnc-secondary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-card .card-title {
+  color: var(--pnc-primary-color);
+  font-weight: 600;
+}
+
+
+/* --- Requirements Section --- */
+.requirements-card .card-header {
+  background-color: var(--pnc-primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.requirements-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.requirements-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.requirements-list li:last-child {
+  border-bottom: none;
+}
+
+.requirements-list .icon {
+  color: var(--pnc-secondary-color);
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}

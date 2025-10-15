@@ -1,0 +1,77 @@
+/* --- Courses Page Hero --- */
+.courses-hero-section {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.courses-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 25, 51, 0.7);
+}
+
+.courses-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Filter Buttons --- */
+.filter-buttons .btn {
+  border-radius: 50px;
+  margin: 0.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons .btn-primary {
+  background-color: var(--pnc-primary-color);
+  border-color: var(--pnc-primary-color);
+}
+
+.filter-buttons .btn-outline-primary {
+  color: var(--pnc-primary-color);
+  border-color: var(--pnc-primary-color);
+}
+
+.filter-buttons .btn-outline-primary:hover {
+  background-color: var(--pnc-primary-color);
+  color: white;
+}
+
+/* --- Course Card Redesign --- */
+.course-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.course-card .card-header {
+  background-color: var(--pnc-primary-color);
+  color: var(--pnc-secondary-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--pnc-secondary-color);
+}
+
+.course-card .card-title {
+  color: var(--pnc-primary-color);
+}
+
+/* --- College Title --- */
+.college-title {
+  font-weight: 600;
+  color: var(--pnc-primary-color);
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
